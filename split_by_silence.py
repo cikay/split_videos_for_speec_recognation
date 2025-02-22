@@ -50,4 +50,9 @@ def video_to_audio_segments(
 input_audio = "./videos/Zulkuf_Ergun_Soane_u_Niviskariya_Kurdi.mp4"
 output_directory = "audio_segments"
 file_prefix = "zulkuf_ergun__soane_u_niviskariya_kurdi"
-video_to_audio_segments(input_audio, output_directory, file_prefix)
+video_to_audio_segments(
+    input_audio,
+    output_directory,
+    file_prefix,
+    min_silence_len=400,
+)
