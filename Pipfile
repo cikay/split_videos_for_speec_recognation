@@ -4,10 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-moviepy = "*"
-keyboard = "*"
+moviepy = "2.1.2"
+pydub = "0.25.1"
+yt-dlp = "2025.2.19"
 
 [dev-packages]
 
 [requires]
-python_version = "3.13"
+python_version = "3.9"
