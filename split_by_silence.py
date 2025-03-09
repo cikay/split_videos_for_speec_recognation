@@ -38,6 +38,9 @@ def video_to_audio_segments(
         )
 
         for i, chunk in enumerate(chunks):
+            if chunk.duration_seconds > 7.0:
+                continue
+
             chunk_name = os.path.join(output_dir, f"{file_prefix}_{i}.wav")
             chunk.export(chunk_name, format="wav")
             print(f"Exported {chunk_name}")
